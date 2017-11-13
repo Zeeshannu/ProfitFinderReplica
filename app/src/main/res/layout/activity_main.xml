@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.zeeshan.profitfinder.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="Revenue"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/ETSalesPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sale Price"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/ETShippingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Shipping Price"/>
+    <EditText
+        android:id="@+id/ETQuantity"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"/>
+    <TextView
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/ETItemCost"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Cost"/>
+    <EditText
+        android:id="@+id/ETShippingCost"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shipping Cost"/>
+    <TextView
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="eBay"
+        android:textSize="22sp"/>
+    <Switch
+        android:id="@+id/SWEbay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eBay"/>
+    <Switch
+        android:id="@+id/SWPaypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PayPal"/>
+    <TextView
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amazon"
+        android:textSize="22sp"/>
+
+    <Switch
+        android:id="@+id/SWAmazon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amazon"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ok"
+    android:id="@+id/Calculate"
+    android:onClick="CalculateResult"/>
+
+</LinearLayout>
