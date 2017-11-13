@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
     //Calculating the total (Shipping and Fees)
     public void totalShippingFeeCalculator(){
 
-        TotalShippingFee= Math.round((EbayFee+PayPalFee+shippingCost)*100.0)/100.0;
+        TotalShippingFee= Math.round((EbayFee+PayPalFee+shippingCost)*100.00)/100.00;
         //(Shipping and Fees) = eBay+ PayPal+ Shipping Cost
     }
 
