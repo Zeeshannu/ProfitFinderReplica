@@ -114,13 +114,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (!_ETSalesPrice.getText().toString().equals(""))    //salePrice = sale price not including shipping Price
-            salePrice =Math.rint(Double.parseDouble((_ETSalesPrice.getText().toString()))*100.00)
+            salePrice =Math.round(Double.parseDouble((_ETSalesPrice.getText().toString()))*100.00)
                     /100.00;
         else
             salePrice =0.0;
 
         if (!_ETShippingPrice.getText().toString().equals(""))    //	shippingPrice = amount Priced to buyer
-            shippingPrice =Math.rint(Double.parseDouble((_ETShippingPrice.getText().toString()))*100.00) /100.00;
+            shippingPrice =Math.round(Double.parseDouble((_ETShippingPrice.getText().toString()))
+                    *100.00) /100.00;
 
         else
             shippingPrice =0.0;
@@ -133,13 +134,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (!_ETItemCost.getText().toString().equals(""))    //itemCost = price you paid for item
-            itemCost =Math.rint(Double.parseDouble((_ETItemCost.getText().toString()))*100.00) /100.00;
+            itemCost =Math.round(Double.parseDouble((_ETItemCost.getText().toString()))*100.00)
+                    /100.00;
         else
             itemCost =0.0;
 
 
         if (!_ETShippingCost.getText().toString().equals(""))    //ShippingCost = price you paid for shipping
-            shippingCost =Math.rint(Double.parseDouble((_ETShippingCost.getText().toString()))*100.00) /100.00;
+            shippingCost =Math.round(Double.parseDouble((_ETShippingCost.getText().toString()))
+                    *100.00) /100.00;
         else
             shippingCost =0.0;
 
@@ -198,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
     public void marginPercentageCalculator(){
 
 
-        MarginPercentage=Math.rint(((NetProfite/TotalRevenue)*100)*10.0)/10.0;
+        MarginPercentage=Math.round(((NetProfite/TotalRevenue)*100)*10.0)/10.0;
 
 /*
         The Total Profit P is the difference between the cost to make a product C and the selling price or revenue R.
@@ -213,14 +216,13 @@ public class MainActivity extends AppCompatActivity {
     //Calculating the Return Percentage generated
     public  void returnPercentageCalculator(){
 
-        ReturnPercentage=Math.rint(((NetProfite/(itemCost+TotalShippingFee))*100)*10.00)/10.00;
+        ReturnPercentage=Math.round(((NetProfite/(itemCost+TotalShippingFee))*100)*10.00)/10.00;
 
         /*
         The Return Percentage RP is the profit P divided by the selling price or Cost C.
         o	RP = P / C= (R - C) / C*/
 
     }
-
 
     public void CalculateResult(View view) {
 
