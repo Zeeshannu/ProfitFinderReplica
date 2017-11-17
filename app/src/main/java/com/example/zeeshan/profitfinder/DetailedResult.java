@@ -81,8 +81,6 @@ private     static String TAG="DetailedResult";
         //More options just check out the documentation!
 
         addDataSet();
-
-
     }
 
 
