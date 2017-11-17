@@ -1,5 +1,6 @@
 package com.example.zeeshan.profitfinder;
 
+import android.app.SharedElementCallback;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -178,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
 
         Margin = (salePrice + shippingPrice) - (itemCost + shippingCost);
         NetProfite = Math.round((Margin - (EbayFee + PayPalFee)) * 100.00) / 100.00;
+        SharedPrefrence.NET_PROFIT=NetProfite;
         //        Margin= (Sale Price + Shipping Price)- (Item Cost+ Shipping Cost)
 //        Total Profit= Margin – (eBay+ PayPal)
 
@@ -193,6 +195,8 @@ public class MainActivity extends AppCompatActivity {
     public void totalShippingFeeCalculator(){
 
         TotalShippingFee= Math.round((EbayFee+PayPalFee+shippingCost)*100.00)/100.00;
+        SharedPrefrence.NET_SHIPPING_FEES=TotalShippingFee;
+        SharedPrefrence.ITEM_COST=itemCost;
         //(Shipping and Fees) = eBay+ PayPal+ Shipping Cost
     }
 

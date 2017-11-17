@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ProfitFinder</string>
+    <string name="margin">Margin</string>
+    <string name="quantity">Quantity</string>
+    <string name="shipping_cost">Shipping Cost</string>
+    <string name="net_profit">Net Profit</string>
+    <string name="ebay_fee">eBay Fee</string>
+    <string name="paypal_fee">PayPal Fee</string>
+    <string name="Return">Return</string>
+    <string name="shipping_price">Shipping Price</string>
+    <string name="shipping_fee">Shipping Fee</string>
+    <string name="sale_price">Sale Price</string>
+    <string name="revenue">Revenue</string>
 </resources>
